@@ -39,4 +39,11 @@ public class DogController {
 
         return response;
     }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
+    public Map<String, Dog> create(@Validated @RequestBody Dog dog) {
+        return dogService.create(dog);
+    }
+
 }
