@@ -23,6 +23,6 @@ public class Dog {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "image__url")
+    @Column(name = "image_url")
     private String imageUrl;
 }
